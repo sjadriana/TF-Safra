@@ -1,0 +1,141 @@
+{
+	"id": "34385ec7-3312-8943-926b-cbce859da2d5",
+	"name": "Lab - api",
+	"description": "",
+	"order": [
+		"bb9a6f40-5616-3a03-118f-bfeed118fce4",
+		"31cbce8a-3d47-a19f-efb6-c1412158b9e2",
+		"e1e36afa-ffba-2579-abb7-6144f7df00a9",
+		"606fd7ee-1652-29b3-233a-fc2d718a08cb"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1599594538233,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "31cbce8a-3d47-a19f-efb6-c1412158b9e2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://jsonbox.io/box_ddb0ab5da8d69da8c315/client",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "34385ec7-3312-8943-926b-cbce859da2d5",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get Client",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1599597898225,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"name\": \"João Oliveira da Silva\",\n  \"type\": \"PF\",\n  \"dateOfBirth\": \"15/03/1977\",\n  \"cpf\": \"56738019041\",\n  \"cnpj\": \"95431285000121\",\n  \"address\": {\n    \"street\": \"Avenida Paulista\",\n    \"number\": \"1223\",\n    \"city\": \"São Paulo\",\n    \"country\": \"Brasil\"\n  }\n}\n"
+		},
+		{
+			"id": "606fd7ee-1652-29b3-233a-fc2d718a08cb",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://jsonbox.io/box_ddb0ab5da8d69da8c315/myProducts",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "34385ec7-3312-8943-926b-cbce859da2d5",
+			"data": [],
+			"dataMode": "raw",
+			"name": "My Products",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1599652921592,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"code\": \"XPTO08\",\n  \"client\": {\n    \"accountNumber\": \"832100-1\",\n    \"agency\": \"6553453\",\n    \"name\": \"José Silva\",\n    \"tel\": \"11964464334\",\n    \"email\": \"jose.silva@email.com\"\n  }\n}"
+		},
+		{
+			"id": "bb9a6f40-5616-3a03-118f-bfeed118fce4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://jsonbox.io/box_ddb0ab5da8d69da8c315/banks",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599597850111,
+			"name": "Get banks",
+			"description": "",
+			"collectionId": "34385ec7-3312-8943-926b-cbce859da2d5",
+			"responses": [],
+			"rawModeData": "[\n  {\n    \"name\": \"Safra\",\n    \"bankNumber\": \"422\",\n    \"callCenter\": \"0800 123 554 222\",\n    \"accounts\": [\n      {\n        \"accountNumber\": \"134334-2\",\n        \"agency\": \"0071\",\n        \"balance\": 180567.99,\n        \"accountManager\": {\n          \"name\": \"Roberto Pereira\",\n          \"email\": \"roberto.pereira@safra.com.br\",\n          \"telefone\": \"11987654223\"\n        },\n        \"accountExtract\": [\n          {\n            \"name\": \"Amazon USA\",\n            \"value\": 159.99,\n            \"date\": \"2020-09-01T11:30:00-03:00\"\n          },\n          {\n            \"name\": \"Walmart USA\",\n            \"value\": 89.9,\n            \"date\": \"2020-09-03T15:35:00-03:00\"\n          },\n          {\n            \"name\": \"Walmart USA\",\n            \"value\": 89.9,\n            \"date\": \"2020-09-05T19:50:00-03:00\"\n          }\n        ],\n        \"credit\": {\n          \"cardNumber\": \"5320220191832530\",\n          \"flag\": \"Visa\",\n          \"dueDate\": \"2020-09-25T10:30:00-03:00\",\n          \"value\": 5290.95,\n          \"cardExpiringDate\": \"2023-09-25T10:30:00-03:00\"\n        }\n      }\n    ]\n  },\n  {\n    \"name\": \"Itaú\",\n    \"bankNumber\": \"341\",\n    \"callCenter\": \"0800 333 545 133\",\n    \"accounts\": [\n      {\n        \"accountNumber\": \"635789-2\",\n        \"agency\": \"9823\",\n        \"balance\": 510.9,\n        \"accountManager\": {\n          \"name\": \"Márcia Silva\",\n          \"email\": \"marcia.silva@itau.com.br\",\n          \"telefone\": \"11957224334\"\n        },\n        \"accountExtract\": [\n          {\n            \"name\": \"Casas Bahia\",\n            \"value\": 104.99,\n            \"date\": \"2020-09-05T17:55:00-03:00\"\n          },\n          {\n            \"name\": \"Grão de gente\",\n            \"value\": 89.9,\n            \"date\": \"2020-09-11T16:38:00-03:00\"\n          },\n          {\n            \"name\": \"Mercado Livre\",\n            \"value\": 89.9,\n            \"date\": \"2020-09-16T12:25:00-03:00\"\n          }\n        ],\n        \"credit\": {\n          \"cardNumber\": \"5488275545198317\",\n          \"flag\": \"Visa\",\n          \"dueDate\": \"2020-09-25T10:30:00-03:00\",\n          \"value\": 890.77,\n          \"cardExpiringDate\": \"2023-09-25T10:30:00-03:00\"\n        }\n      }\n    ]\n  },\n  {\n    \"name\": \"Santander\",\n    \"bankNumber\": \"033\",\n    \"callCenter\": \"0800 343 222 432\",\n    \"accounts\": [\n      {\n        \"accountNumber\": \"453667-2\",\n        \"agency\": \"098852\",\n        \"balance\": 2510.9,\n        \"accountManager\": {\n          \"name\": \"Vanessa Oliveira\",\n          \"email\": \"vanessa.oliveira@santander.com.br\",\n          \"telefone\": \"11954667664\"\n        },\n        \"accountExtract\": [\n          {\n            \"name\": \"C&C Casa e Construção\",\n            \"value\": 539.99,\n            \"date\": \"2020-09-11T11:22:00-03:00\"\n          },\n          {\n            \"name\": \"Leroy Merlin\",\n            \"value\": 29.9,\n            \"date\": \"2020-09-13T09:20:00-03:00\"\n          },\n          {\n            \"name\": \"Mercado Livre\",\n            \"value\": 89.9,\n            \"date\": \"2020-09-18T09:20:00-03:00\"\n          }\n        ],\n        \"credit\": {\n          \"cardNumber\": \"5114988530998317\",\n          \"flag\": \"Mastercard\",\n          \"dueDate\": \"2020-09-25T10:30:00-03:00\",\n          \"value\": 300.90,\n          \"cardExpiringDate\": \"2023-09-25T10:30:00-03:00\"\n        }\n      }\n    ]\n  },\n  {\n    \"name\": \"Bradesco\",\n    \"bankNumber\": \"237\",\n    \"callCenter\": \"0800 132 356 874\",\n    \"accounts\": [\n      {\n        \"accountNumber\": \"433988-1\",\n        \"agency\": \"9882\",\n        \"balance\": 4550.55,\n        \"accountManager\": {\n          \"name\": \"Fernando Teixeira\",\n          \"email\": \"fernando.teixeira@bradesco.com.br\",\n          \"telefone\": \"11954667664\"\n        },\n        \"accountExtract\": [\n          {\n            \"name\": \"C&C Casa e Construção\",\n            \"value\": 539.99,\n            \"date\": \"2020-09-05T09:20:00-03:00\"\n          },\n          {\n            \"name\": \"Leroy Merlin\",\n            \"value\": 29.9,\n            \"date\": \"2020-09-11T09:20:00-03:00\"\n          },\n          {\n            \"name\": \"Mercado Livre\",\n            \"value\": 89.9,\n            \"date\": \"2020-09-21T09:20:00-03:00\"\n          }\n        ],\n        \"credit\": {\n          \"cardNumber\": \"5114277535198317\",\n          \"flag\": \"Visa\",\n          \"value\": 1987.55,\n          \"dueDate\": \"2020-09-25T10:30:00-03:00\",\n          \"cardExpiringDate\": \"2023-09-25T10:30:00-03:00\"\n        }\n      }\n    ]\n  },\n  {\n    \"name\": \"Nubank\",\n    \"bankNumber\": \"260\",\n    \"callCenter\": \"0800 444 134 790\",\n    \"accounts\": [\n      {\n        \"accountNumber\": \"832100-1\",\n        \"agency\": \"6553453\",\n        \"balance\": 350,\n        \"accountManager\": {\n          \"name\": \"Manoela Braga\",\n          \"email\": \"manoela.braga@nubank.com.br\",\n          \"telefone\": \"11943350993\"\n        },\n        \"accountExtract\": [\n          {\n            \"name\": \"Supermercado do bairro\",\n            \"value\": 30.5,\n            \"date\": \"2020-09-06T11:30:00-03:00\"\n          },\n          {\n            \"name\": \"Papelaria do bairro\",\n            \"value\": 12.75,\n            \"date\": \"2020-09-10T23:22:00-03:00\"\n          },\n          {\n            \"name\": \"Mercado Livre\",\n            \"value\": 50.55,\n            \"date\": \"2020-09-19T13:22:00-03:00\"\n          }\n        ],\n        \"credit\": {\n          \"cardNumber\": \"5990374735147364\",\n          \"flag\": \"Mastercard\",\n          \"value\": 30,\n          \"dueDate\": \"2020-09-25T10:30:00-03:00\",\n          \"cardExpiringDate\": \"2023-09-25T10:30:00-03:00\"\n        }\n      }\n    ]\n  }\n]\n"
+		},
+		{
+			"id": "e1e36afa-ffba-2579-abb7-6144f7df00a9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://jsonbox.io/box_ddb0ab5da8d69da8c315/offers",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "34385ec7-3312-8943-926b-cbce859da2d5",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Get Offers",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1599609988881,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "[\n  {\n    \"type\": \"CREDIT\",\n    \"rate\": 6,\n    \"value\": 5000,\n    \"name\": \"Crédito Pessoal que cabe no seu bolso\",\n    \"maxInstallments\": 12,\n    \"bank\": {\n      \"name\" : \"Safra\",\n      \"cod\": \"422\"\n    }\n  },\n  {\n    \"type\": \"CREDIT\",\n    \"rate\": 6.5,\n    \"value\": 6000,\n    \"name\": \"Crédito Pessoal que cabe no seu bolso\",\n    \"maxInstallments\": 18,\n    \"bank\": {\n      \"name\" : \"Itaú\",\n      \"cod\": \"341\"\n    }\n  },\n  {\n    \"type\": \"CREDIT\",\n    \"rate\": 5,\n    \"value\": 10000,\n    \"name\": \"Crédito pessoal ideal para quitar aquela dívida\",\n    \"maxInstallments\": 18,\n    \"bank\": {\n      \"name\" : \"Itaú\",\n      \"cod\": \"341\"\n    }\n  },\n  {\n    \"type\": \"CREDIT\",\n    \"rate\": 6.5,\n    \"value\": 15000,\n    \"name\": \"Crédito pessoal ideal para quitar aquela dívida\",\n    \"maxInstallments\": 24,\n    \"bank\": {\n      \"name\" : \"Safra\",\n      \"cod\": \"422\"\n    }\n  },\n  {\n    \"type\": \"CREDIT\",\n    \"rate\": 4,\n    \"value\": 15000,\n    \"name\": \"Crédito Pessoal perfeito para sua viagem\",\n    \"maxInstallments\": 24,\n    \"bank\": {\n      \"name\" : \"Bradesco\",\n      \"cod\": \"237\"\n    }\n  },\n  {\n    \"type\": \"Banco Pan\",\n    \"rate\": 5,\n    \"value\": 18000,\n    \"name\": \"Crédito Pessoal perfeito para sua viagem\",\n    \"maxInstallments\": 24,\n    \"bank\": {\n      \"name\" : \"Pan\",\n      \"cod\": \"623\"\n    }\n  },\n  {\n    \"type\": \"CREDIT\",\n    \"rate\": 3,\n    \"value\": 20000,\n    \"name\": \"Crédito Pessoal para sua reforma do seu imóvel\",\n    \"maxInstallments\": 30,\n    \"bank\": {\n      \"name\" : \"Santander\",\n      \"cod\": \"0033\"\n    }\n  },\n  {\n    \"type\": \"CREDIT\",\n    \"rate\": 4,\n    \"value\": 21000,\n    \"name\": \"Crédito Pessoal para sua reforma do seu imóvel\",\n    \"maxInstallments\": 30,\n    \"bank\": {\n      \"name\" : \"Inter\",\n      \"cod\": \"077\"\n    }\n  }\n]"
+		}
+	]
+}
