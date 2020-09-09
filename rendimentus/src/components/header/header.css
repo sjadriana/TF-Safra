@@ -1,0 +1,9 @@
+.header{
+  background: #1E2044;
+}
+.logo-image{
+  fill:#E3B15A
+}
+.logo-logout{
+  display: flex;
+}

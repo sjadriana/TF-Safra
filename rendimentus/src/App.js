@@ -1,15 +1,10 @@
 import React from 'react';
 import './App.css';
+import Header from '../src/components/header/index'
 
 function App() {
-  return (
-    <div>
-      <header>
-        <p>
-          Instalação React teste.
-        </p>
-      </header>
-    </div>
+  return (    
+        <Header />          
   );
 }
 
