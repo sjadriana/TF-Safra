@@ -1,16 +1,20 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useState} from "react-router-dom";
 import Form from "../components/form/Form.js";
-import logo from "../components/form/logo-safra.svg";
+import logo from "../components/form/logo-safra-gold.svg";
 import "./Home.css"
 
 
 export const Home = () => {
     let history = useHistory();
-
     // const handleClick = () => {
     //     history.push("/profile")
     // }
+
+    // const [login, setLogin] = useState();
+
+
+
 
     return (
         <main className='main-home'>
@@ -22,7 +26,9 @@ export const Home = () => {
                         <ul>CPF/CNPJ</ul>
                     </div>
                 </section>
-                <Form />
+                <Form
+                    // onChangeLogin={(event) => setLogin(event.target.value)}
+                />
             </div>
         </main>
     )
