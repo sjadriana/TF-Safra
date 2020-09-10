@@ -1,0 +1,10 @@
+.footer-images{
+  height: 33px;
+}
+footer{
+  background:#1E2044;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+}
