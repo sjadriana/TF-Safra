@@ -3,24 +3,29 @@ import Images from '../images/images'
 import logo from '../../assests/logo-safra.svg'
 import logout from '../../assests/logout.svg'
 import './header.css'
-// import { Link } from "react-router-dom";
-// import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 
-const Header = () => {
- 
+export const Header = () => {
+  let history = useHistory();
+
+  const handleClick = (path) => {
+    history.push(path);
+  };
   
   return (
     <header className='header'>
       <div className='logo-logout'>
-      <Images src={logo} alt='logo' class='logo-image' />
-      <div className='louout' onClick={e => console.log('foi')}> 
-      <Images src={logout} alt='logout' class='logout-image' />
+        <div className='logo'>
+          <Images src={logo} alt='logo'  />
+        </div>
+        <div className='logout' onClick={() =>handleClick("/home")}> 
+      <Images src={logout} alt='logout' class='logout-image' />      
       </div>
-      </div>          
+      </div>           
       <nav>
-        <ul>
-          <li><h1 id='client-name'>Ana</h1></li>
-          <li><p id='client-account'>conta</p></li>
+        <ul className='client-info'>
+          <li className='name-li'><h1 id='client-name' className='client-name'>Ana</h1></li>
+          <li className='account-info'><p id='client-account'>conta</p></li>
         </ul>
       </nav>
     </header>
@@ -28,4 +33,4 @@ const Header = () => {
   );
 }
 
-export default Header
+ 
