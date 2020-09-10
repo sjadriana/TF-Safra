@@ -3,13 +3,14 @@ import React from "react";
 import Button from "../button/button";
 import Input from "../input/Input"
 
+
 const Form = (props) => {
     return (
         <form className='form-login'>
             <label htmlFor='login'>
-            <Input className= 'input-cpf' onChange={props.onChangeLogin} />
+                <Input className='input-cpf' onChange={props.onChangeLogin} />
             </label>
-            <Button onclick={props.onclick} className='consult-btn' name= 'Consultar' />
+            <Button onclick={props.onclick} className='consult-btn' name='Consultar' />
         </form>
     );
 }
