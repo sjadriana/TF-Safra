@@ -9,9 +9,9 @@ export const Profile = () => {
 
     let history = useHistory();
 
-    // const handleClick = (path) => {
-    //     history.push(path);
-    //   };
+    const handleClick = (path) => {
+        history.push(path);
+    };
 
     useEffect(() => {
         loadBanks().then(result => 
@@ -35,7 +35,21 @@ export const Profile = () => {
     }
 
     const sumCreditExpenses = (banks) => {
-        return banks.reduce((total/*, bank*/) => total += 300, 0);
+        let totalCredit= 0;
+        banks.forEach(bank => {
+            let extract= bank.accounts[0].accountExtract;
+            totalCredit += extract.reduce((total, launch) => total += launch.value, 0);            
+        });
+        return totalCredit;
+    }
+
+    const creditOffer = (accBalance, creditCards) => {
+        if ((accBalance - creditCards) < 800){
+            return (<button onClick={() => handleClick(`/offers`)}>Creditos</button>);
+        }
+        else {
+            return (<></>);
+        }
     }
 
     return (
@@ -50,16 +64,19 @@ export const Profile = () => {
                     agency = {bank.accounts[0].agency}     
                     accountNumber = {bank.accounts[0].accountNumber}     
                     balance = {bank.accounts[0].balance}
-                    creditExpenses = {300}
+                    accountManager ={bank.accounts[0].accountManager.email}
+                    creditExpenses = {bank.accounts[0].accountExtract
+                        .reduce((total, launch) => total += launch.value, 0)}
                     /*onClick = {() => handleClick(`/statement/${index}`)}*/
                 />
             )}
             </section>
 
             <footer className='profile-footer'>
-                <p>Saldo das contas: {sumBalanceAccount(banks)}</p>
-                <p>Fatura dos cartões: {sumCreditExpenses(banks)}</p>
-                <p>Total: {sumBalanceAccount(banks) - sumCreditExpenses(banks)}</p>
+                <p>Saldo das contas: {sumBalanceAccount(banks).toFixed(2)}</p>
+                <p>Fatura dos cartões: {sumCreditExpenses(banks).toFixed(2)}</p>
+                <p>Total: {(sumBalanceAccount(banks) - sumCreditExpenses(banks)).toFixed(2)}</p>
+                {creditOffer(sumBalanceAccount(banks), sumCreditExpenses(banks))}
             </footer>
         </>
     );
