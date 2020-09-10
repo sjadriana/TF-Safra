@@ -2,6 +2,7 @@
   align-self: flex-end;
   font-size: 18px;
   margin-right: 10px;
+  font-family: 'Roboto Slab', serif; 
   
 }
 .client-info{
@@ -47,3 +48,5 @@ li {
 .name-li{
   align-self: flex-end;
 }
+/* ,,font-family: 'Roboto Slab', serif;
+font-family: 'Roboto Slab', serif; */
