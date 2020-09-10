@@ -1,0 +1,47 @@
+.account-info{
+  align-self: end;
+  font-size: 18px;
+  margin-right: 10px;
+  
+}
+.client-info{
+  color:#E3B15A;
+  display: flex;
+  justify-content: space-between;
+  height: 33px;
+}
+.client-name{
+  color:#E3B15A;
+  align-self:end;
+  height: 27px;
+}
+.header{
+  background: #1E2044;
+}
+li {
+  list-style-type: none;
+}
+.logo{
+  width: 50vw;
+  text-align: end;
+  margin: auto;
+}
+
+.logo-image{
+  fill:#E3B15A
+}
+.logo-logout{
+  display: flex;
+  width: 100vw;
+  height: 64px;
+  border: 2px solid #00003c44;
+}
+.logout{
+  margin: auto;
+}
+.logout-image{
+  height: 32px;
+}
+.name-li{
+  align-self: flex-end;
+}
