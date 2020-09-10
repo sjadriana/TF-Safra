@@ -27,7 +27,7 @@ import './footer.css'
          <Images src={Notification} class='footer-images ' />
          <Images src={Notification} class='footer-images imgs' />
        </div>
-       <div onClick={() => handleClick("/contacts")}>
+       <div onClick={() => handleClick("/contact")}>
          <Images src={Contact}class='footer-images' />
          <Images src={Contact}class='footer-images imgs' />
        </div>
