@@ -1,9 +1,15 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 
 export const CardProfile = (props) => {
+    let history = useHistory();
+
+    const handleClick = () => {
+        history.push(props.onClick);
+      };
 
     return (
-        <div className= 'card' onClick={props.onClick}>
+        <div className= 'card' onClick={() => handleClick()}>
                 <h2 className= 'bank'>{props.bankNumber} / {props.bankName}</h2>
             <div className='card-account'>
                 <p>Ag: {props.agency}</p>

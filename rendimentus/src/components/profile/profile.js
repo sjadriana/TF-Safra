@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import {CardProfile} from './cardProfile/cardProfile.js'; 
-import { useHistory } from "react-router-dom";
+import {CardProfile} from './cardProfile/cardProfile.js';
 import { Header } from '../header/index.js';
 import './profile.css';
 
 export const Profile = () => {
     const [banks, setBanks] = useState([]);
-
-    let history = useHistory();
-
-    // const handleClick = (path) => {
-    //     history.push(path);
-    //   };
 
     useEffect(() => {
         loadBanks().then(result => 
@@ -51,7 +44,7 @@ export const Profile = () => {
                     accountNumber = {bank.accounts[0].accountNumber}     
                     balance = {bank.accounts[0].balance}
                     creditExpenses = {300}
-                    /*onClick = {() => handleClick(`/statement/${index}`)}*/
+                    onClick = {`/statement/${bank.name}`}
                 />
             )}
             </section>
