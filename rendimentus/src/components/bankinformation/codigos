@@ -1,0 +1,15 @@
+    <footer>
+      <div onClick={() => handleClick("/statement")}>extrato</div>
+      <div onClick={() => handleClick("/invoice")}>fatura</div>
+      <div onClick={() => handleClick("/products")}>produto</div>
+      <div onClick={() => handleClick("/contacts")}>contato</div>
+    </footer>
+
+    const handleClick = (path) => {
+    history.push(path);
+  };
+
+  let history = useHistory();
+
+  import { useHistory } from "react-router-dom";
+
