@@ -10,7 +10,7 @@ const Form = (props) => {
             <label htmlFor='login'>
                 <Input className='input-cpf' onChange={props.onChangeLogin} />
             </label>
-            <Button onclick={props.onclick} className='consult-btn' name='Consultar' />
+            <Button className='consult-btn' onclick={props.onclick} name='Consultar' />
         </form>
     );
 }
