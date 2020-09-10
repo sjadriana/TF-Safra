@@ -9,9 +9,9 @@ export const Profile = () => {
 
     let history = useHistory();
 
-    const handleClick = (path) => {
-        history.push(path);
-      };
+    // const handleClick = (path) => {
+    //     history.push(path);
+    //   };
 
     useEffect(() => {
         loadBanks().then(result => 
