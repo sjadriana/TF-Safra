@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import { useHistory } from "react-router-dom";
-import {CardOffers} from './cardOffers/index.js'
+import {CardOffers, cardOffers} from './cardOffers/index.js'
 import { Header } from '../header/index.js';
 import Footer from '../footer/index.js';
 //  export const Offers = ()=>{
@@ -51,7 +51,10 @@ export const ClientOffers = () => {
       <>
           <Header/>
           <section className='cards-profile'>
-          {offers.map((offer, index) => {}
+          {offers.map((offer, index) => <cardOffers 
+          key={index}
+          name={offer.name}
+          />
           
             
           )}
