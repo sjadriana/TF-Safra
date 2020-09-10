@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;531&family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+.container-home{
+    max-width: 60%;
+}
+
+.logo{
+    align-items: center; 
+    width: 100%;
+    height: 150%;
+}
+
+.gold{
+    color: #E3B15A;
+    text-align: center;
+}
+
+ul{
+    color: #E3B15A;
+    text-align: left;
+}
+.input-cpf{
+    border-radius: 9px;
+}
+.consult-btn{
+    font-size: 18px;
+    /* line-height: 24px;  */
+    background:#E3B15A;
+}
