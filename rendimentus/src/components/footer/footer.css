@@ -1,16 +1,17 @@
 .footer-images{
   height: 45px;
+  fill:red;
 }
 footer{
   background:#1E2044;
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: fixed;
-   left: 0;
-   bottom: 0;
+  left: 0;
+  bottom: 0;
 }
 .imgs{
   display: none;

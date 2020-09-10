@@ -10,7 +10,7 @@ import { BankInvoice } from "./components/bankinformation/BankInvoice.js";
 // import { Contact } from "colocar o caminho dos contatos";
 import {Header} from"./components/header/index.js"
 import Footer from './components/footer';
-
+import {Offers} from "./components/offers/index.js"
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route path="/contact" component={Contact} /> */}
         <Route path="/header" component={Header} />
         <Route path="/footer" component={Footer} />
+        <Route path="/offers" component={Offers} />
       </Switch>
     </BrowserRouter>
   );
