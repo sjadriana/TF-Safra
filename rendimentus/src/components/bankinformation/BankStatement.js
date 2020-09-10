@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 import './bankinformation.css';
 import { Header } from "../header/index.js";
 import { loadApiGetBanks } from "./loadApi.js";
@@ -6,15 +7,13 @@ import Footer from '../footer';
 
 export const BankStatement = () => {
   const [extract, setExtract] = useState([]);
-  // const [test, setTest] = useState([]);
+  let location = useLocation();
 
   useEffect(() => {
-    loadApiGetBanks().then((client) => setExtract(client[2].accounts[0].accountExtract));
+    loadApiGetBanks().then((client) => {
+      setExtract(client.find(item=>item.name === location.pathname.split("/")[2]).accounts[0].accountExtract);
+    });
   }, []);
-
-  // useEffect(() => {
-  //   loadApiGetBanks().then(client => client.map(bank => setTest(bank.accounts[0].accountExtract)));
-  // }, []);
 
 
   return (
