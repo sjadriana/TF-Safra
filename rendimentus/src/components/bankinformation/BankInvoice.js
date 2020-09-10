@@ -4,9 +4,8 @@ import { Header } from "../header/index.js";
 import { loadApiGetBanks } from "./loadApi.js";
 import { useHistory } from "react-router-dom";
 
-export const BankStatement = () => {
-  const [extract, setExtract] = useState([]);
-  // const [test, setTest] = useState([]);
+export const BankInvoice = () => {
+  const [invoice, setInvoice] = useState([]);
   let history = useHistory();
 
   const handleClick = (path) => {
@@ -14,26 +13,21 @@ export const BankStatement = () => {
   };
 
   useEffect(() => {
-    loadApiGetBanks().then((client) => setExtract(client[2].accounts[0].accountExtract));
+    loadApiGetBanks().then((client) => setInvoice(client[2].accounts[0].accountExtract));
   }, []);
 
-  // useEffect(() => {
-  //   loadApiGetBanks().then(client => client.map(bank => setTest(bank.accounts[0].accountExtract)));
-  // }, []);
-
+  console.log(invoice)
 
   return (
     <>
       <Header />
-      <h1 className="hExtract">Extrato</h1>
+      <h1 className="hExtract">Fatura</h1>
       <section className="section">
         <div className="divExtract">
-          {extract.map((eachExtract, index) => (
+          <p>Total: </p>
+          {invoice.map((eachExtract, index) => (
             <div key={index}>
-              <p className="pExtract">Nome: {eachExtract.name}</p>
               <p className="pExtract">Valor: R${eachExtract.value}</p>
-              <p className="pExtract">Data: {eachExtract.date}</p>
-              <p></p>
             </div>
           ))}
         </div>
