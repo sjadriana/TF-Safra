@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import { Home } from "colocar o caminho do home";
-// import { Profile } from "colocar o caminho do perfil";
+import { Profile } from "./components/profile/profile";
 import { BankStatement } from "./components/bankinformation/BankStatement.js";
 // import { Invoice } from "colocar o caminho da fatura";
 // import { Products } from "colocar o caminho dos produtos";
@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Switch>
          {/* <Route path="/" exact={true} component={Home} /> */}
-        {/* <Route path="/profile" component={Profile} /> */} 
+        <Route path="/profile" component={Profile} /> 
         <Route path="/statement" component={BankStatement} />
         {/* <Route path="/invoice" component={Invoice} />
         <Route path="/products" component={Products} />
