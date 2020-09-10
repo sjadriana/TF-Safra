@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, useState} from "react-router-dom";
+import { useHistory} from "react-router-dom";
 import Form from "../components/form/Form.js";
 import logo from "../components/form/logo-safra-gold.svg";
 import "./Home.css"
