@@ -12,12 +12,12 @@ export const CardProfile = (props) => {
         <div className= 'card' onClick={() => handleClick()}>
                 <h2 className= 'bank'>{props.bankNumber} / {props.bankName}</h2>
             <div className='card-account'>
-                <p>Ag: {props.agency}</p>
+                <p className='agency'>Ag: {props.agency}</p>
                 <p>CC: {props.accountNumber}</p>
             </div>
             <div className='card-balance'>
-                <p>Saldo: {props.balance}</p>
-                <p>Fatura do cartao: {props.creditExpenses}</p>
+                <p>Saldo: {props.balance.toFixed(2)}</p>
+                <p>Fatura do cartao: {props.creditExpenses.toFixed(2)}</p>
             </div>
         </div>
     );
