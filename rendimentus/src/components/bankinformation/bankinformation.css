@@ -1,5 +1,21 @@
 .section {
-  border: 1px solid black;
-  width: 90%;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divExtract {
+  width: 85%;
+  padding: 10px;
+  box-shadow: 1px 2px 4px 2px rgba(30, 32, 68, 0.5);
+  border-radius: 8px;
+}
+
+.pExtract {
+  margin: 0px;
+}
+
+.hExtract {
+  text-align: center;
+  margin-top: 150px;
 }
