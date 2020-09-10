@@ -1,4 +1,7 @@
-*{box-sizing: border-box;} 
+*{
+    box-sizing: border-box;
+} 
+
 .card{
     box-shadow: inset 0 0 0.5em #1E2044; 
     border-radius: 20px;
@@ -6,20 +9,31 @@
     font-size: 12px;
     flex-direction: column;
     margin: 10px auto;
-    padding: 0 20px;
+    padding: 0 10px;
     width: 90%;
 }
-.card-account{
+
+p{
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+}
+.card-account {
     display: flex;
-    justify-content: space-around;
 }
-.card-balance{
-align-self: flex-end;
+
+.agency {
+    margin-right: 20px;
 }
-.bank{
+
+.card-balance {
+    align-self: flex-end;
+}
+
+.bank {
     margin-bottom: 5px;
 }
-.profile-footer{
+
+.profile-footer {
     display: block;
     color: #E3B15A;
     width: 100vw;
