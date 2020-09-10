@@ -17,6 +17,8 @@
 }
 .header{
   background: #1E2044;
+  position: fixed;
+  top: 0px;
 }
 li {
   list-style-type: none;
