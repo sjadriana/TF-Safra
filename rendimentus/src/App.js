@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
-// import { Profile } from "colocar o caminho do perfil";
+import { Profile } from "./components/profile/profile";
+
 import { BankStatement } from "./components/bankinformation/BankStatement.js";
-// import { Invoice } from "colocar o caminho da fatura";
+import { BankInvoice } from "./components/bankinformation/BankInvoice.js";
 // import { Products } from "colocar o caminho dos produtos";
 // import { Contact } from "colocar o caminho dos contatos";
 import {Header} from"./components/header/index.js"
@@ -16,10 +17,10 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact={true} component={Home} />
-        {/*<Route path="/profile" component={Profile} /> */}
+        <Route path="/profile" component={Profile} /> 
         <Route path="/statement" component={BankStatement} />
-        {/* <Route path="/invoice" component={Invoice} />
-        <Route path="/products" component={Products} />
+        <Route path="/invoice" component={BankInvoice} />
+        {/* <Route path="/products" component={Products} />
         <Route path="/contact" component={Contact} /> */}
         <Route path="/header" component={Header} />
         <Route path="/footer" component={Footer} />

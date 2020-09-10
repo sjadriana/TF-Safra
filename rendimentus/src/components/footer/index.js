@@ -17,15 +17,19 @@ import './footer.css'
      <footer>
        <div onClick={() => handleClick("/statement")}>
          <Images src={Invoice} class='footer-images' />
+         <Images src={Invoice} class='footer-images imgs' />
        </div>
-       <div onClick={() => handleClick("/invoice")}>
+       <div onClick={() => handleClick("/invoice")} >
          <Images src={Card}class='footer-images' />
+         <Images src={Card}class='footer-images imgs' />
        </div>
        <div onClick={() => handleClick("/products")}>
-         <Images src={Notification} class='footer-images' />
+         <Images src={Notification} class='footer-images ' />
+         <Images src={Notification} class='footer-images imgs' />
        </div>
        <div onClick={() => handleClick("/contacts")}>
          <Images src={Contact}class='footer-images' />
+         <Images src={Contact}class='footer-images imgs' />
        </div>
      </footer>
    )
