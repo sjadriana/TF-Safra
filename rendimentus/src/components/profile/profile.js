@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import {CardProfile} from './cardProfile/cardProfile.js'; 
-import { useHistory } from "react-router-dom";
+import {CardProfile} from './cardProfile/cardProfile.js';
 import { Header } from '../header/index.js';
+import { useHistory } from "react-router-dom"
 import './profile.css';
 
 export const Profile = () => {
@@ -64,10 +64,11 @@ export const Profile = () => {
                     agency = {bank.accounts[0].agency}     
                     accountNumber = {bank.accounts[0].accountNumber}     
                     balance = {bank.accounts[0].balance}
+                    creditExpenses = {300}
+                    onClick = {`/statement/${bank.name}`}
                     accountManager ={bank.accounts[0].accountManager.email}
                     creditExpenses = {bank.accounts[0].accountExtract
                         .reduce((total, launch) => total += launch.value, 0)}
-                    /*onClick = {() => handleClick(`/statement/${index}`)}*/
                 />
             )}
             </section>
