@@ -6,6 +6,31 @@ import './header.css'
 import { useHistory } from "react-router-dom"
 
 export const Header = () => {
+
+  const fetchClient = ()=>{
+    fetch(`https://jsonbox.io/box_ddb0ab5da8d69da8c315/client`)
+    .then( function(response){
+      return response.json()
+    })
+    .then(function(data){
+      const nameList= data.map(item => item.name)
+      const name =nameList.reduce((acc, client)=>{
+        acc += `<p>${client.name}</p>`
+        return acc
+        
+      })
+      const cpf = data.map(item =>item.cpf).reduce((acc, client)=>{
+        acc += `<p>${client.cpf}</p>`
+        return acc
+        
+      })
+      console.log(name)
+      console.log(cpf)
+    })
+  }
+  fetchClient()
+
+
   let history = useHistory();
 
   const handleClick = (path) => {
