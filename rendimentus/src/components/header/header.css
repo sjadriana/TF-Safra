@@ -30,11 +30,6 @@
 li {
   list-style-type: none;
 }
-.logo{
-/*   
-  text-align: end;
-  margin: auto; */
-}
 
 .logo-image{
   fill:#E3B15A
@@ -54,8 +49,12 @@ li {
 }
 .name-li{
   align-self: flex-end;
-  width: ;
 }
+
+.visibility {
+  visibility: hidden;
+}
+
 @media(min-width: 1200px){
   .header{
     height: 19vh;
