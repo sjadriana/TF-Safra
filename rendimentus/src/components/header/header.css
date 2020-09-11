@@ -8,7 +8,7 @@
 .client-info{
   color:#E3B15A;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 3vh;
   font-family: Roboto Slab;
 
@@ -33,6 +33,7 @@
  
 }
 .images-header{
+  place-items: baseline;
   display: flex;
   justify-content: space-between;
 }
@@ -58,14 +59,15 @@ li {
   cursor: pointer;
 }
 .logout-image{
+  padding-right: 4px;
   height: 27px;
 }
 .name-li{
   align-self: flex-end;
-  width: ;
+  
 }
 @media(min-width: 1200px){
   .header{
-    height: 19vh;
+    height: 10vh;
   }
 }
