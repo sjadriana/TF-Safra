@@ -1,0 +1,33 @@
+.card-offers{
+  box-shadow: inset 0 0 0.5em #1E2044; 
+    border-radius: 20px;
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 0 16px 16px;
+    width: 90%;
+    cursor: pointer;
+}
+
+.cards-offers{
+  margin-top: 75px;
+  margin-bottom: 70px;
+}
+
+.bank-border{
+  border: 2px solid #E3B15A;
+}
+
+.title-card-offer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.min-tax{
+  color: #9D1047;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
+}

@@ -10,7 +10,6 @@ export const Profile = () => {
     const [banks, setBanks] = useState([]);
     const [products, setProducts] = useState([]);
 
-
     let history = useHistory();
 
     const handleClick = (path) => {
@@ -42,7 +41,7 @@ export const Profile = () => {
         try {
             const getBanksApi = await fetch("https://jsonbox.io/box_ddb0ab5da8d69da8c315/banks")
             const response = await getBanksApi.json();
-          return response;
+            return response;
         }
         catch (err) {
             console.error("We got a problem to fetch the information", err)
@@ -102,7 +101,7 @@ export const Profile = () => {
                     creditExpenses = {bank.accounts[0].accountExtract
                         .reduce((total, launch) => total += launch.value, 0)}
                 />
-            )}
+            ).reverse()}
             </section>
 
             <footer className='profile-footer'>
