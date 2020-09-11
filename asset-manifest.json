@@ -1,22 +1,36 @@
 {
   "files": {
-    "main.css": "./static/css/main.76e27cc9.chunk.css",
-    "main.js": "./static/js/main.e6ba0de5.chunk.js",
-    "main.js.map": "./static/js/main.e6ba0de5.chunk.js.map",
+    "main.css": "./static/css/main.83d0bc3b.chunk.css",
+    "main.js": "./static/js/main.6c0845a8.chunk.js",
+    "main.js.map": "./static/js/main.6c0845a8.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.7a668861.js",
     "runtime-main.js.map": "./static/js/runtime-main.7a668861.js.map",
-    "static/js/2.8f68b7e0.chunk.js": "./static/js/2.8f68b7e0.chunk.js",
-    "static/js/2.8f68b7e0.chunk.js.map": "./static/js/2.8f68b7e0.chunk.js.map",
+    "static/css/2.62afb475.chunk.css": "./static/css/2.62afb475.chunk.css",
+    "static/js/2.df1f311a.chunk.js": "./static/js/2.df1f311a.chunk.js",
+    "static/js/2.df1f311a.chunk.js.map": "./static/js/2.df1f311a.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.2fa740e8558ab9a29bc1acc2b7c7f4dd.js": "./precache-manifest.2fa740e8558ab9a29bc1acc2b7c7f4dd.js",
+    "precache-manifest.64a1e5a371b6f817a5467a8855659ee2.js": "./precache-manifest.64a1e5a371b6f817a5467a8855659ee2.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.76e27cc9.chunk.css.map": "./static/css/main.76e27cc9.chunk.css.map",
-    "static/js/2.8f68b7e0.chunk.js.LICENSE.txt": "./static/js/2.8f68b7e0.chunk.js.LICENSE.txt"
+    "static/css/2.62afb475.chunk.css.map": "./static/css/2.62afb475.chunk.css.map",
+    "static/css/main.83d0bc3b.chunk.css.map": "./static/css/main.83d0bc3b.chunk.css.map",
+    "static/js/2.df1f311a.chunk.js.LICENSE.txt": "./static/js/2.df1f311a.chunk.js.LICENSE.txt",
+    "static/media/back.svg": "./static/media/back.18d452f5.svg",
+    "static/media/card-blue.svg": "./static/media/card-blue.f883bf0c.svg",
+    "static/media/card.svg": "./static/media/card.19b994dd.svg",
+    "static/media/contact-blue.svg": "./static/media/contact-blue.c8b1fdf3.svg",
+    "static/media/contact.svg": "./static/media/contact.6b01b095.svg",
+    "static/media/font-awesome.min.css": "./static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/invoice-blue.svg": "./static/media/invoice-blue.f55e34d1.svg",
+    "static/media/invoice.svg": "./static/media/invoice.c7fb71cb.svg",
+    "static/media/logo-safra-gold.svg": "./static/media/logo-safra-gold.a5ece4f7.svg",
+    "static/media/logo-safra.svg": "./static/media/logo-safra.9c9f49e3.svg",
+    "static/media/logout.svg": "./static/media/logout.4f5acf35.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7a668861.js",
-    "static/js/2.8f68b7e0.chunk.js",
-    "static/css/main.76e27cc9.chunk.css",
-    "static/js/main.e6ba0de5.chunk.js"
+    "static/css/2.62afb475.chunk.css",
+    "static/js/2.df1f311a.chunk.js",
+    "static/css/main.83d0bc3b.chunk.css",
+    "static/js/main.6c0845a8.chunk.js"
   ]
 }
