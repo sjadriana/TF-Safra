@@ -5,7 +5,7 @@ import { Header } from "../header/index.js";
 import { loadApiGetBanks } from "./loadApi.js";
 import Footer from '../footer';
 import Images from '../images/images.js';
-import Card from '../../assests/card.svg';
+import Card from '../../assests/card-blue.svg';
 
 
 export const BankInvoice = () => {

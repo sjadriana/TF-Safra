@@ -36,6 +36,7 @@ p{
     margin-bottom: 5px;
 }
 .profile-footer {
+    background-color:#1E2044;;
     display: block;
     color: #E3B15A;
     width: 100vw;
@@ -54,7 +55,7 @@ h3{
      margin-left: 5%;
 }
 
-.creditOffers{
+.creditOffers{    
     display: flex;
     width: 100%;
     color:white;

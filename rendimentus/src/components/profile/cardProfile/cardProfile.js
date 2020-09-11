@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import '../../../../node_modules/font-awesome/css/font-awesome.min.css'; 
+import "../../../../node_modules/font-awesome/css/font-awesome.min.css" 
 
 export const CardProfile = (props) => {
     let history = useHistory();
