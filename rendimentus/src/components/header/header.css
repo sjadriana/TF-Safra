@@ -56,6 +56,11 @@ li {
   align-self: flex-end;
   width: ;
 }
+
+.visibility {
+  visibility: hidden;
+}
+
 @media(min-width: 1200px){
   .header{
     height: 19vh;
