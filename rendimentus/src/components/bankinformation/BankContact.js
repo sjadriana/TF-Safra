@@ -2,18 +2,22 @@ import React, { useState, useEffect } from 'react';
 import './bankinformation.css';
 import { Header } from "../header/index.js";
 import { loadApiGetBanks } from "./loadApi.js";
+import { useLocation } from "react-router-dom";
 import Footer from '../footer';
 
 export const BankContact = () => {
   const [contactManager, setContactManager] = useState([]);
   const [contactCenter, setContactCenter] = useState([]);
+  let location = useLocation();
 
   useEffect(() => {
-    loadApiGetBanks().then((client) => setContactManager(client[2].accounts[0].accountManager));
+    loadApiGetBanks().then((client) => {
+      setContactManager(client.find(item=>item.name === location.pathname.split("/")[2]).accounts[0].accountManager)
+    });
   }, []);
 
   useEffect(() => {
-    loadApiGetBanks().then((client) => setContactCenter(client[2]));
+    loadApiGetBanks().then((client) => setContactCenter(client.find(item=>item.name === location.pathname.split("/")[2])));
   }, []);
 
   return (
