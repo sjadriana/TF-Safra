@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import './cardOffer.css'
 
 
 export const CardOffers = (props) => {
@@ -15,8 +14,11 @@ export const CardOffers = (props) => {
   }
 
   return (
-    <div className='card-offers' onClick={() => handleClick()}>
-      <h2 className='offers'>{props.bankName} </h2>
+    <div className={`card-offers ${props.hasBank}`} onClick={() => handleClick()}>
+      <div className='title-card-offer'>
+        <h2 className='offers'>{props.bankName} </h2>
+        <p className='min-tax'>{props.minTax}</p>
+      </div>
       <p> {props.offerName}</p>
       <div className='offers-account'>
         <p>{props.type}</p>
