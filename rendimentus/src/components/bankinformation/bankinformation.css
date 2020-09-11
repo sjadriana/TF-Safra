@@ -6,6 +6,7 @@
 }
 
 .div-extract {
+  color: #1E2044;
   width: 85%;
   padding: 10px;
   box-shadow: 1px 2px 4px 2px rgba(30, 32, 68, 0.5);
@@ -18,8 +19,10 @@
 }
 
 .h-extract {
+  font-family: Montserrat;
+  color: #1E2044;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 21vh;
 }
 
 .p-margin {

@@ -82,7 +82,7 @@
 }
 
 
-@media(min-width: 1200px){
+@media(min-width: 900px){
   .client-name{
     font-size: 35px;
   }
@@ -90,7 +90,7 @@
     font-size: 19px;
   }
   .header{
-    height: 17vh;
+    height: 18vh;
   }
   .img-logo{
     height:11vh;

@@ -12,12 +12,12 @@ export const BankContact = () => {
 
   useEffect(() => {
     loadApiGetBanks().then((client) => {
-      setContactManager(client.find(item=>item.name === location.pathname.split("/")[2]).accounts[0].accountManager)
+      setContactManager(client.find(item => item.name === location.pathname.split("/")[2]).accounts[0].accountManager)
     });
   }, []);
 
   useEffect(() => {
-    loadApiGetBanks().then((client) => setContactCenter(client.find(item=>item.name === location.pathname.split("/")[2])));
+    loadApiGetBanks().then((client) => setContactCenter(client.find(item => item.name === location.pathname.split("/")[2])));
   }, []);
 
   return (
