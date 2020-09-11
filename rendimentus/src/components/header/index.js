@@ -53,13 +53,12 @@ export const Header = () => {
         </div>
       </div>
       <nav>
-        <ul className='client-info'>
-          <li className='name-li'><h1 id='client-name' className='client-name'>Olá, {name}!</h1></li>
-          <li className='account-info'><p id='client-account'>CPF: {cpf}</p></li>
-        </ul>
+        <div className='client-info'>
+          <p id='client-name' className='client-name'>Olá, {name}!</p>
+          <p className='client-account'>CPF: {cpf}</p>
+        </div>
       </nav>
     </header>
-
   );
 }
 
