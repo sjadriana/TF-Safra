@@ -19,15 +19,17 @@ export const BankStatement = () => {
   return (
     <>
       <Header />
-      <h1 className="hExtract">Extrato</h1>
+      <h1 className="h-extract">Extrato</h1>
       <section className="section">
-        <div className="divExtract">
+        <div className="div-extract">
           {extract.map((eachExtract, index) => (
             <div key={index}>
-              <p className="pExtract">Nome: {eachExtract.name}</p>
-              <p className="pExtract">Valor: R${eachExtract.value}</p>
-              <p className="pExtract">Data: {eachExtract.date}</p>
-              <p></p>
+              <p className="p-extract p-bold">{eachExtract.name}</p>
+              <p className="p-extract span-date-value">
+                <span>{eachExtract.date.split("T")[0]}</span>
+                <span>R$ {eachExtract.value}</span>
+              </p>
+              <p className="p-margin"></p>
             </div>
           ))}
         </div>
