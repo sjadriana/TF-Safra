@@ -48,14 +48,18 @@ p{
     margin-bottom: 100px;
     margin-top: 20px;
 }
-.cards-products{
-    margin-top: 80px;
+.cards-products{    
+    margin-top: 80px; 
 }
 h3{
-    margin-left: 5%;
+    color: #00003C;
+    font-family: Montserrat;
+     margin-left: 5%;
 }
 
 .creditOffers{    
+    color: #00003C;
+    font-family: Montserrat;
     display: flex;
     width: 100%;
     color:white;
@@ -77,7 +81,7 @@ h3{
     background-image: linear-gradient(to right,#9D1047, #da6491);
 }
     
-@media(min-width: 1200px){
+@media(min-width: 900px){
     .creditOffers{
         justify-content: center;
         padding-top: 5vh;
