@@ -1,7 +1,7 @@
 .account-info{
   align-self: flex-end;
   font-size: 18px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   font-family: 'Roboto Slab', serif; 
   
 }
@@ -9,7 +9,7 @@
   color:#E3B15A;
   display: flex;
   justify-content: space-between;
-  height: 33px;
+  height: 3vh;;
 }
 .client-name{
   color:#E3B15A;
@@ -20,14 +20,20 @@
   background: #1E2044;
   position: fixed;
   top: 0px;
+  height: 15vh;
+  width: 100vw;
+ 
+}
+.images-header{
+  display: flex;
 }
 li {
   list-style-type: none;
 }
 .logo{
-  width: 50vw;
+/*   
   text-align: end;
-  margin: auto;
+  margin: auto; */
 }
 
 .logo-image{
@@ -36,17 +42,22 @@ li {
 .logo-logout{
   display: flex;
   width: 100vw;
-  height: 64px;
+  height: 52px;
   border-bottom: 2px solid #00003c44;
 }
 .logout{
   margin: auto;
+  cursor: pointer;
 }
 .logout-image{
   height: 32px;
 }
 .name-li{
   align-self: flex-end;
+  width: ;
 }
-/* ,,font-family: 'Roboto Slab', serif;
-font-family: 'Roboto Slab', serif; */
+@media(min-width: 1200px){
+  .header{
+    height: 19vh;
+  }
+}
