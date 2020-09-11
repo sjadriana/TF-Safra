@@ -12,8 +12,11 @@
     padding: 0 10px;
     width: 90%;
 }
-
+h2{
+    font-family:Roboto Slab;
+}
 p{
+    font-family:Montserrat;
     margin-block-start: 1px;
     margin-block-end: 1px;
 }

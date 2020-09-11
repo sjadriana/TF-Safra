@@ -8,32 +8,37 @@
 .client-info{
   color:#E3B15A;
   display: flex;
-  justify-content: space-between;
-  height: 3vh;;
+  justify-content: space-around;
+  height: 3vh;
+  font-family: Roboto Slab;
+
+}
+.client-account{
+  margin: revert;
+  font-size: 11px;
 }
 .client-name{
   color:#E3B15A;
   align-self:end;
   height: 27px;
+  font-size: 24px;
+  font-family: Roboto Slab;
 }
 .header{
   background: #1E2044;
   position: fixed;
   top: 0px;
-  height: 15vh;
+  height: 12vh;
   width: 100vw;
  
 }
 .images-header{
+  place-items: baseline;
   display: flex;
+  justify-content: space-between;
 }
 li {
   list-style-type: none;
-}
-.logo{
-/*   
-  text-align: end;
-  margin: auto; */
 }
 
 .logo-image{
@@ -45,19 +50,23 @@ li {
   height: 52px;
   border-bottom: 2px solid #00003c44;
 }
-.logout{
-  margin: auto;
+.logout{  
   cursor: pointer;
 }
 .logout-image{
-  height: 32px;
+  padding-right: 4px;
+  height: 27px;
 }
 .name-li{
   align-self: flex-end;
-  width: ;
 }
+
+.visibility {
+  visibility: hidden;
+}
+
 @media(min-width: 1200px){
   .header{
-    height: 19vh;
+    height: 10vh;
   }
 }
