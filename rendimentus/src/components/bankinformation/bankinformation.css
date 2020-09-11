@@ -5,18 +5,56 @@
   margin-bottom: 120px;
 }
 
-.divExtract {
+.div-extract {
   width: 85%;
   padding: 10px;
   box-shadow: 1px 2px 4px 2px rgba(30, 32, 68, 0.5);
   border-radius: 8px;
 }
 
-.pExtract {
+.p-extract {
   margin: 0px;
 }
 
-.hExtract {
+.h-extract {
   text-align: center;
   margin-top: 150px;
+}
+
+.p-margin {
+  margin-top: 10px;
+}
+
+.p-bold {
+  font-weight: bold;
+}
+
+.p-size {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.see-statement{
+  text-align: center;
+  background-color: #1E2044;
+  color: #E3B15A
+}
+
+.icon-card{
+  width: 30%;
+}
+
+.span-date-value{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 900px) {
+  .div-extract{
+    width: 30%;
+  }
 }
