@@ -30,11 +30,6 @@
 li {
   list-style-type: none;
 }
-.logo{
-/*   
-  text-align: end;
-  margin: auto; */
-}
 
 .logo-image{
   fill:#E3B15A
@@ -54,7 +49,6 @@ li {
 }
 .name-li{
   align-self: flex-end;
-  width: ;
 }
 
 .visibility {
