@@ -23,14 +23,15 @@ export const BankContact = () => {
   return (
     <>
       <Header />
-      <h1 className="hExtract">Contato</h1>
+      <h1 className="h-extract">Contato</h1>
       <section className="section">
-        <div className="divExtract">
-          <p>Central: {Object.values(contactCenter)[3]}</p>
-          <h3>Gerente</h3>
-          <p className="pExtract">Nome: {Object.values(contactManager)[0]}</p>
-          <p className="pExtract">E-mail: {Object.values(contactManager)[1]}</p>
-          <p className="pExtract">Telefone: {Object.values(contactManager)[2]}</p>
+        <div className="div-extract">
+          <h3 className="p-margin">Central</h3>
+          <p>Telefone: {Object.values(contactCenter)[3]}</p>
+          <h3 className="p-margin">Gerente</h3>
+          <p className="p-extract">Nome: {Object.values(contactManager)[0]}</p>
+          <p className="p-extract">E-mail: {Object.values(contactManager)[1]}</p>
+          <p className="p-extract">Telefone: {Object.values(contactManager)[2]}</p>
         </div>
       </section>
       <Footer />
