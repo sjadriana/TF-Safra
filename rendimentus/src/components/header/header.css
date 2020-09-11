@@ -20,7 +20,7 @@
 }
 .client-account{
   margin: revert;
-  font-size: 11px;
+  font-size: 14px;
 }
 .client-name{
   color:#E3B15A;
@@ -33,7 +33,7 @@
   background: #1E2044;
   position: fixed;
   top: 0px;
-  height: 12vh;
+  height: 14vh;
   width: 100vw;
  
 }
@@ -44,7 +44,11 @@
   justify-content: space-between;
 }
 .img-back{
-  height: 3vh;
+  height: 2.5vh;
+  padding-left: 2vw;
+}
+.img-logo{
+  padding-top: 1vh;
 }
 .logo{ 
   text-align: center;  
@@ -65,7 +69,7 @@
   cursor: pointer;
 }
 .logout-image{
-  padding-right: 4px;
+  padding-right: 5vw;;
   height:3vh;
 }
 .name-li{
