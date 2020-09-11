@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import './bankinformation.css';
+import { useLocation } from "react-router-dom";
 import { Header } from "../header/index.js";
 import { loadApiGetBanks } from "./loadApi.js";
 import Footer from '../footer';
 
 export const BankInvoice = () => {
   const [invoice, setInvoice] = useState([]);
+  let location = useLocation();
 
   useEffect(() => {
-    loadApiGetBanks().then((client) => setInvoice(client[2].accounts[0].accountExtract));
+    loadApiGetBanks().then((client) => {
+      setInvoice(client.find(item=>item.name === location.pathname.split("/")[2]).accounts[0].accountExtract);
+    });
   }, []);
 
   const sumExtract = () => {
