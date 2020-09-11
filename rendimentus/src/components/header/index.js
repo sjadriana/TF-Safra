@@ -38,7 +38,7 @@ export const Header = () => {
   return (
     <header className='header'>
       <div className='images-header'>
-        <div className='back'>
+        <div className='back'onClick={() => handleClick("/profile")}>
           <Images src={back} alt='back' />
         </div>
         <div className='logo'>
