@@ -40,7 +40,7 @@ export const Header = () => {
         <div className='logo'>
           <Images src={logo} alt='logo'  />
         </div>
-        <div className='logout' onClick={() =>handleClick("/home")}> 
+        <div className='logout' onClick={() =>handleClick("/")}> 
       <Images src={logout} alt='logout' class='logout-image' />      
       </div>
       </div>           

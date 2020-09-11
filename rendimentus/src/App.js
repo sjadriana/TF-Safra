@@ -7,10 +7,10 @@ import { Profile } from "./components/profile/profile";
 import { BankStatement } from "./components/bankinformation/BankStatement.js";
 import { BankInvoice } from "./components/bankinformation/BankInvoice.js";
 // import { Products } from "colocar o caminho dos produtos";
-// import { Contact } from "colocar o caminho dos contatos";
+import { BankContact } from "./components/bankinformation/BankContact.js";
 import {Header} from"./components/header/index.js"
 import Footer from './components/footer';
-
+import {ClientOffers} from "./components/offers/index.js"
 
 function App() {
   return (
@@ -20,10 +20,11 @@ function App() {
         <Route path="/profile" component={Profile} /> 
         <Route path="/statement" component={BankStatement} />
         <Route path="/invoice" component={BankInvoice} />
-        {/* <Route path="/products" component={Products} />
-        <Route path="/contact" component={Contact} /> */}
+        {/* <Route path="/products" component={Products} /> */}
+        <Route path="/contact" component={BankContact} />
         <Route path="/header" component={Header} />
         <Route path="/footer" component={Footer} />
+        <Route path="/offers" component={ClientOffers} />
       </Switch>
     </BrowserRouter>
   );
