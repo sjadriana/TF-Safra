@@ -78,7 +78,9 @@
 
 .visibility {
   visibility: hidden;
+  width: 33.33vw;
 }
+
 
 @media(min-width: 1200px){
   .client-name{
@@ -93,4 +95,8 @@
   .img-logo{
     height:11vh;
   }
+  .logout-image {
+    padding-right: 2vw;
+    height: 5vh;
+}
 }
