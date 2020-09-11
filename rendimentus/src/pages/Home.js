@@ -20,7 +20,7 @@ export const Home = () => {
         <main className='main-home'>
             <div className='container-home'>
                 <img src={logo} alt='' className='logo'></img>
-                <h1 className='gold'>Rendimentus</h1>
+                <h2 className='gold'>Rendimentus</h2>
                 <section>
                     <div>
                         <ul>CPF/CNPJ</ul>
