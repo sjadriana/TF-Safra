@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import {CardProfile} from './cardProfile/cardProfile.js';
+import {CardProducts} from './cardProducts/cardProducts.js';
+import { CreditOffers } from './creditOffers/creditOffers.js';
 import { Header } from '../header/index.js';
 import { useHistory } from "react-router-dom"
 import './profile.css';
 
 export const Profile = () => {
     const [banks, setBanks] = useState([]);
+    const [products, setProducts] = useState([]);
+
 
     let history = useHistory();
 
@@ -18,6 +22,21 @@ export const Profile = () => {
             setBanks(result))
     }, []);
 
+    useEffect(() => {
+        loadProducts().then(result => 
+            setProducts(result))
+    }, []);
+
+    const loadProducts = async () => {
+        try {
+            const getBanksApi = await fetch("https://jsonbox.io/box_ddb0ab5da8d69da8c315/myProducts")
+            const response = await getBanksApi.json();
+          return response;
+        }
+        catch (err) {
+            console.error("We got a problem to fetch the information", err)
+        }    
+    }
     
     const loadBanks = async () => {
         try {
@@ -45,17 +64,30 @@ export const Profile = () => {
 
     const creditOffer = (accBalance, creditCards) => {
         if ((accBalance - creditCards) < 800){
-            return (<button onClick={() => handleClick(`/offers`)}>Creditos</button>);
+            return (<CreditOffers onClick={() => handleClick(`/offers`)}/>);
         }
         else {
             return (<></>);
         }
     }
-
+    
     return (
         <>
             <Header/>
+            <section className='cards-products'>
+        {creditOffer(sumBalanceAccount(banks), sumCreditExpenses(banks))}
+                <h3>Meus Produtos</h3>
+                {products.map((product, index) => 
+            <CardProducts
+                    key={index}
+                    agency={product.client.agency}
+                    accountNumber={product.client.accountNumber}
+                    product={product.code}
+                    />
+            )}
+            </section>
             <section className='cards-profile'>
+                <h3>Minhas contas</h3>
             {banks.map((bank, index) => 
                 <CardProfile
                     key={index}
@@ -77,7 +109,6 @@ export const Profile = () => {
                 <p>Saldo das contas: {sumBalanceAccount(banks).toFixed(2)}</p>
                 <p>Fatura dos cartões: {sumCreditExpenses(banks).toFixed(2)}</p>
                 <p>Total: {(sumBalanceAccount(banks) - sumCreditExpenses(banks)).toFixed(2)}</p>
-                {creditOffer(sumBalanceAccount(banks), sumCreditExpenses(banks))}
             </footer>
         </>
     );
