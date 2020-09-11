@@ -5,7 +5,12 @@
   font-family: 'Roboto Slab', serif; 
   
 }
+.back{
+  height:3vh;
+  width: 33.33vw;
+}
 .client-info{
+  width: 100vw;
   color:#E3B15A;
   display: flex;
   justify-content: space-around;
@@ -33,14 +38,18 @@
  
 }
 .images-header{
+  width: 100vw;
   place-items: baseline;
   display: flex;
   justify-content: space-between;
 }
-li {
-  list-style-type: none;
+.img-back{
+  height: 3vh;
 }
-
+.logo{ 
+  text-align: center;  
+  width: 33.33vw;
+}
 .logo-image{
   fill:#E3B15A
 }
@@ -51,11 +60,13 @@ li {
   border-bottom: 2px solid #00003c44;
 }
 .logout{  
+  text-align: end;
+  width: 33.33vw;
   cursor: pointer;
 }
 .logout-image{
   padding-right: 4px;
-  height: 27px;
+  height:3vh;
 }
 .name-li{
   align-self: flex-end;
@@ -66,7 +77,16 @@ li {
 }
 
 @media(min-width: 1200px){
+  .client-name{
+    font-size: 35px;
+  }
+  .client-account{
+    font-size: 19px;
+  }
   .header{
-    height: 10vh;
+    height: 17vh;
+  }
+  .img-logo{
+    height:11vh;
   }
 }
