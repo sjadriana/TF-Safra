@@ -43,10 +43,10 @@ export const Header = () => {
     <header className='header'>
       <div className='images-header'>
         <div className={compareLocation ? "visibility" : "back"} onClick={() => handleClick("/profile")}>
-          <Images src={back} alt='back' />
+          <Images src={back} alt='back' class='img-back' />
         </div>
         <div className='logo'>
-          <Images src={logo} alt='logo' />
+          <Images src={logo} alt='logo' class='img-logo'/>
         </div>
         <div className='logout' onClick={() => handleClick("/")}>
           <Images src={logout} alt='logout' class='logout-image' />
